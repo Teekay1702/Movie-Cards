@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    margin: 10px;
+    box-shadow: black;
+}
+
+.movie {
+    width: 300px;
+    height: 600px;
+    background: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin: 0 20px 20px 20px;
+    box-shadow: 0 0 20px black;
+}
+
+    .movie:hover {
+        transform: scale(1.1);
+        transition: 1px ease;
+        box-shadow: 0 0 80px -25px rgba(0,0,0,0.5);
+    }
+
+.movie-image-1 {
+    background: url("pictures/deadpool.jpg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-2 {
+    background: url("pictures/MBY.webp"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-3 {
+    background: url("pictures/friday.webp"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-4 {
+    background: url("pictures/scream4.jpeg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-5 {
+    background: url("pictures/rocky.jpg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-6 {
+    background: url("pictures/jumanji.jpg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-7 {
+    background: url("pictures/wtbb.jpg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image-8 {
+    background: url("pictures/tlam2.jpg"), rgb(30,27,38);
+    height: 250px;
+    width: 250px;
+}
+
+.movie-image {
+    height: 85%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+    .movie-image span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+.movie-info {
+    color: #8ab0db;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.movie-title {
+    font-size: 2rem;
+    margin-bottom: 2px;
+}
+
+.movie-genre {
+    font-size: 0.8rem;
+    color: #c2d8f4;
+    margin-top: -2px;
+}
+
+.movie-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+    .movie-text p:nth-child(1) {
+        font-size: 0.8rem;
+    }
+
+    .movie-text p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+.icons {
+    color: var(--icon-color);
+    font-size: 0.8rem;
+}
+
+    .icons span {
+        margin-left: 10px;
+    }
+
+.movie-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.text {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.director {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.cast {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 3px 8px;
+    background: #8ab0db;
+    border: 1px solid #8ab0db;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: #1c2a3c;
+}
+
+    button i {
+        color: #1c2a3c;
+        padding-right: 1px;
+    }
+
+    button a {
+        color: #1c2a3c;
+        text-decoration: none;
+    }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+
+
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.card-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust spacing between cards */
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 20%;
+}
+
+.movie {
+    flex: 0 0 calc(25% - 16px);
+    box-sizing: border-box; /* Include padding and border in width */
+    background-color: #f4f4f4; /* Optional: for visualization */
+    border: 1px solid #ccc; /* Optional: for visualization */
+    padding: 20px; /* Optional: for better spacing */
+    margin: 0 auto; /* Center the card horizontally */
+}
